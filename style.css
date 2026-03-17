@@ -1,12 +1,20 @@
 body {
-    max-width: 1412px;
+    /* max-width: 1412px; */
     margin: 0 auto;
-   
+    font-family: "Manrope", sans-serif;
+
+}
+.container{
+     max-width: 1412px;
+    margin: 0 auto;
+    font-family: "Manrope", sans-serif;
 }
 
-.banner{
-  background-color: #06284d;  
-  padding: 20px;
+.banner {
+    background-color: #001726; 
+    background-image: radial-gradient(at center , #2173FF5C 0%, #2173FF00 44%);
+    min-height: 98vh;
+    padding: 20px 200px;
 }
 
 .logo {
@@ -18,7 +26,7 @@ body {
 .logo h2 {
     font-size: 20px;
     font-weight: 600;
-     color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .logo img {
@@ -41,14 +49,14 @@ body {
 .nav h2 {
     font-size: 20px;
     font-weight: 600;
-     color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .nav-btn {
     display: flex;
     align-items: center;
     gap: 15px;
-     color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .btn {
@@ -71,34 +79,42 @@ body {
 
 /* 2nd section */
 
-.flexibe{
-display: flex;
-justify-content: space-between;
-margin-top: 50px;
-padding: 0 30px 0 10px;
-
-}
-.banner-title{
+.flexibe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
     
+    gap: 100px;
+    padding: 0 30px 0 10px;
+
 }
 
-.best-btn{
-     width: fit-content;
+.banner-title {
+flex: 1;
+}
+
+.best-btn {
+    width: fit-content;
     font-size: 12px;
-   padding: 12px 16px;
-    background-color: #2173ff;
+    padding: 12px 16px;
+    background-color: #4A4F5C;
     border: none;
     cursor: pointer;
     border-radius: 50px;
     color: #4A4F5C;
     margin-top: 20px;
 }
-.banner-title h2{
-font-size: 32px;
-font-weight: 700;
-color: #FFFFFF;
+
+
+
+.banner-title h2 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
 }
-.banner-title p{
+
+.banner-title p {
     font-size: 20px;
     font-weight: 600;
     color: #F3F4F6;
@@ -109,49 +125,56 @@ color: #FFFFFF;
     height: 30px;
 }
 
-.request form{
-   border: 1px solid wheat;
-   padding: 32px;
-   background-color: white;
-   border-radius: 16px;
-   
+.request-form {
+    border: 1px solid wheat;
+    padding: 32px;
+    background-color: white;
+    border-radius: 16px;
+    flex: 1;
+
 }
 
 
-.form-box {
-    display: flex;
+.name {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    border-top: 1px solid #e5eeff;
 
 }
 
 .name h3 {
     font-size: 18px;
     color: #000000;
-    
+
 
 }
-.solution{
+
+.solution {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
+
+
 }
 
-.solution h2{
+.solution h2 {
     font-size: 20px;
 }
-.solution p{
+
+.solution p {
     font-size: 16px;
     margin-top: 0px;
     margin-bottom: 30px;
 }
-.name input {
+
+.input-field {
     padding: 12px 16px;
     background-color: #F3F4F6;
     border-radius: 8px;
     border: none;
     font-size: 16px;
+    width: 90%;
 }
 
 .description h3 {
@@ -159,19 +182,11 @@ color: #FFFFFF;
     color: #000000;
 }
 
-.description input {
-    display: flex;
-    padding: 50px 150px;
-    background-color: #F3F4F6;
-    border-radius: 8px;
-    border: none;
-    font-size: 16px;
-}
-.form-btn{
+.form-btn {
     width: 100%;
     font-size: 18px;
     font-weight: 500;
-   padding: 20px;
+    padding: 20px;
     background-color: #2173ff;
     border: none;
     cursor: pointer;
@@ -181,34 +196,182 @@ color: #FFFFFF;
 
 }
 
+/* 3rd section */
 
-/* resposive small */
-@media screen and (max-width:600px) {
-    .nav h2{
-display: none;
-justify-content: space-between;
-    }
-.nav-btn h2{
-    display: none;
+.Product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Product h2{
+font-size: 24px;
+font-weight: 700;
+}
+.Product p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Product-button {
+    height: 50px;
+    font-size: 16px;
+    border: 2px solid red;
+    background-color: #eff7fe;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border-radius: 50px;
+    border: none;
+}
+
+.product-btn {
+    font-size: 13px;
+    padding: 12px 20px;
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    color: #2374ff;
+
+
 }
 
 
-.btn{
-    height: 40px;
-    font-size: 12px;
+
+
+/* responsive for small device */
+@media screen and (max-width:600px) {
+   .navbar h2{
+display: none;
+   }
+.navbar{
+    display: flex;
+    
+}
+.banner{
+    padding: 10px 16px;
+    height: fit-content;
+}
+.flexibe{
+    flex-direction: column;
+    height: 100%;
+}
+.banner-title h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.banner-title p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner-title{
+    text-align: center;
+}
+.name {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.solution p{
+font-size: 13px;
+font-weight: 400;
+}
+.form-btn{
+    padding: 10px 15px;
+}
+
+
+}
+
+/* responsive for tablet device */
+@media (min-width: 601px) and (max-width: 768px) {
+    .navbar{
+    display: flex;
+}
+.banner{
+    padding: 10px 16px;
+    height: fit-content;
+}
+.banner-title{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -60px;
+}
+.flexibe{
+    flex-direction: column;
+    height: 100%;
+   
+}
+  .navbar h2{
+display: none;
+   }
+.banner-title h2 {
+    font-size: 58px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner-title p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.request-form{
+    margin-bottom: 30px;
+}
+  
+
+}
+/*  responsive for laptop device */
+@media (min-width: 769px) and (max-width: 1024px){
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .banner-title{
-    justify-content: center;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: -60px;
 }
 .flexibe{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+   
 }
- 
+  .navbar h2{
+display: none;
+   }
+.banner-title h2 {
+    font-size: 55px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner-title p{
+    font-size: 20px;
+    font-weight: 600;
+}
 
+}
+
+/* responsive for computer device */
+
+@media (min-width: 1025px) and (max-width: 1440px){
+.banner-title h2 {
+    font-size: 55px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner-title p{
+    font-size: 20px;
+    font-weight: 600;
+}
 
 }
