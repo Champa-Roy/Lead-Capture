@@ -723,6 +723,9 @@ body {
         flex-direction: column;
         height: 100%;
     }
+    .request-form{
+        width: 90%;
+    }
 
     .banner-title h2 {
         font-size: 32px;
@@ -763,6 +766,7 @@ body {
 
     .product-section {
         margin: 0px 20px;
+        
     }
 
     .Product-button p {
@@ -775,81 +779,220 @@ body {
         grid-template-columns: repeat(1, 1fr);
 
     }
+
     .card-img {
+        flex-direction: column;
+
+    }
+
+    .card h2 {
+        font-size: 24px;
+        width: 90%;
+
+    }
+
+    .card p {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .card-2 h2 {
+        font-size: 32px;
+        width: 90%;
+    }
+
+    .card-2 p {
+        font-size: 16px;
+        width: 90%;
+
+    }
+
+    .card-2-img img {
+        height: 120px;
+        border-radius: 16px;
+    }
+.features{
     flex-direction: column;
-    
 }
 
-.card h2 {
+.features-section{
+     margin: 0px 20px;
+}
+.features-banner h2{
     font-size: 24px;
-    width: 90%;
-    
+}
+.features-images img{
+    width: 60%;
 }
 
-.card p {
+.summary-card-igm{
+    flex-direction: column;
+}
+
+.summary-total-card img{
+width: 100%;
+height: fit-content;
+}
+.summary-cards{
+    flex-direction: column;
+    margin-top: 50px;
+}
+.summary-img img{
+    width: 100%;
+height: fit-content;
+}
+.features-first-image, .features-second-image{
+    display: none;
+}
+.features-title h2{
+    font-size: 24px;
+}
+.competitive-title{
+width: 100%;
+}
+.competitive-title h2{
+    width: 100%;
+    font-size: 24px;
+}
+.competitive-section, .faqs-section{
+    padding: 20px;
+}
+.competitive-cards{
+    grid-template-columns: repeat(1,1fr);
+}
+.faqs-card h3, .hassle-card h2{
+    font-size: 24px;
+}
+.faqs-card-img h3{
     font-size: 18px;
-    width: 90%;
 }
-.card-2 h2 {
-    font-size: 32px;
-    width: 90%;
-}
-
-.card-2 p {
-    font-size: 16px;
-    width: 90%;
-   
+.hassle-section{
+    margin: 20px;
+    padding: 20px;
 }
 
-.card-2-img img {
-    height: 120px;
-    border-radius: 16px;
-}
+
+
+
+
+
+
+
+
+
 }
 
 /* responsive for tablet device */
 @media (min-width: 601px) and (max-width: 768px) {
-    .navbar {
-        display: flex;
-    }
-
-    .banner {
-        padding: 10px 16px;
-        height: fit-content;
-    }
-
-    .banner-title {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: -60px;
-    }
-
-    .flexibe {
-        flex-direction: column;
-        height: 100%;
-
-    }
-
     .navbar h2 {
         display: none;
     }
-
-    .banner-title h2 {
-        font-size: 58px;
-        font-weight: 600;
-        color: #FFFFFF;
-        margin-top: 10px;
-        margin-bottom: 10px;
+    .navbar {
+        display: flex;
     }
+.flexibe{
+    flex-direction: column;
+    height: fit-content;
+    
+    
+}
+.banner-title h2{
+    font-size: 44px;
 
-    .banner-title p {
-        font-size: 20px;
-        font-weight: 700;
-    }
+}
+.banner{
+    padding: 20px;
+}
 
-    .request-form {
-        margin-bottom: 30px;
+.banner-title{
+    text-align: center;
+}
+.cards {
+        grid-template-columns: repeat(1, 1fr);
+
     }
+.product-section{
+    margin: 20px;
+}
+.Product h2{
+    font-size: 34px;
+}
+.Product p{
+    width: 100%;
+}
+.Product-btn {
+    width: 150px;
+}
+.Product-button p{
+    width: 150px;
+}
+.features{
+    flex-direction: column;
+}
+
+.features-section{
+     margin: 0px 20px;
+}
+.features-banner h2{
+    font-size: 34px;
+}
+.features-images img{
+    width: 60%;
+}
+.features-first-image, .features-second-image{
+    display: none;
+}
+.summary-card-igm{
+    flex-direction: row;
+}
+
+.summary-total-card img{
+width: 100%;
+height: fit-content;
+}
+.summary-cards{
+    flex-direction: column;
+    margin-top: 50px;
+}
+.summary-img img{
+    width: 100%;
+height: fit-content;
+}
+.features-title h2{
+    font-size: 34px;
+}
+
+.competitive-title{
+width: 100%;
+}
+.competitive-title h2{
+    width: 100%;
+    font-size: 34px;
+}
+.competitive-section, .faqs-section{
+    padding: 20px;
+}
+.competitive-cards{
+    grid-template-columns: repeat(2,1fr);
+}
+.faqs-card h3, .hassle-card h2{
+    font-size: 34px;
+}
+.faqs-card-img h3{
+    font-size: 18px;
+}
+.hassle-section{
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
 
 
 }
@@ -861,7 +1004,9 @@ body {
         justify-content: space-between;
         align-items: center;
     }
-
+.banner{
+    padding: 30px 60px;
+}
     .banner-title {
         text-align: center;
         margin-top: 30px;
@@ -890,6 +1035,82 @@ body {
         font-size: 20px;
         font-weight: 600;
     }
+    .request-form{
+        width: 100%;
+    }
+    
+.solution h2{
+    font-size: 30px;
+}
+.cards{
+    grid-template-columns: repeat(1,1fr);
+    margin: 20px;
+}
+
+
+
+
+
+
+.features{
+    flex-direction: column;
+}
+
+.features-section{
+     margin: 0px 20px;
+}
+.features-banner h2{
+    font-size: 48px;
+}
+.features-images img{
+    width: 60%;
+}
+.features-first-image, .features-second-image{
+    display: none;
+}
+.summary-card-igm{
+    flex-direction: row;
+}
+
+.summary-total-card img{
+width: 100%;
+height: fit-content;
+}
+.summary-cards{
+    flex-direction: column;
+    margin-top: 50px;
+}
+.summary-img img{
+    width: 100%;
+height: fit-content;
+}
+.features-title h2{
+    font-size: 48px;
+}
+
+.competitive-title{
+width: 100%;
+}
+.competitive-title h2{
+    width: 100%;
+    font-size: 48px;
+}
+.competitive-section, .faqs-section{
+    padding: 20px;
+}
+.competitive-cards{
+    grid-template-columns: repeat(2,1fr);
+}
+.faqs-card h3, .hassle-card h2{
+    font-size: 48px;
+}
+.faqs-card-img h3{
+    font-size: 20px;
+}
+.hassle-section{
+    margin: 20px;
+    padding: 30px;
+}
 
 }
 
@@ -897,16 +1118,40 @@ body {
 
 @media (min-width: 1025px) and (max-width: 1440px) {
     .banner-title h2 {
-        font-size: 55px;
-        font-weight: 600;
-        color: #FFFFFF;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        font-size: 70px;
     }
 
     .banner-title p {
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 30px;
+        font-weight: 400;
     }
+    .banner{
+    padding: 30px;
+}
+.product-section{
+    margin: 20px;
+}
+.Product-button{
+    padding: 20px;
+}
+.Product-button p, .product-btn, .Product p { 
+font-size: 20px;
+}
+.product-btn{
+    width: 200px;
+    padding: 20px;
+}
+.features-section, .hassle-section{
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 }
