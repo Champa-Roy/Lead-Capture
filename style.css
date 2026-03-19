@@ -404,7 +404,7 @@ body {
     border-radius: 100%;
 }
 
-.icon-img h4{
+.icon-img h4 {
     font-size: 18px;
     color: #16171C;
 }
@@ -555,58 +555,151 @@ body {
 }
 
 /* 6th section */
-.faqs-section{
+.faqs-section {
     background-color: #eff7fe;
     padding: 50px 100px;
 }
 
-.faqs-card{
+.faqs-card {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.faqs-card p{
+
+.faqs-card p {
     font-size: 16px;
     color: #16171C;
     border-left: 2px solid #2374ff;
     padding-left: 5px;
 
 }
-.faqs-card h3{
+
+.faqs-card h3 {
     font-size: 48px;
     color: #16171C;
     margin-top: 0;
 }
 
-.faqs-card-img h3{
-   font-size: 24px;
-   color: #16171C; 
-   cursor: pointer;
+.faqs-card-img h3 {
+    font-size: 24px;
+    color: #16171C;
+    cursor: pointer;
 }
-.faqs-card-img h3:hover{
+
+.faqs-card-img h3:hover {
     color: #2173ff;
 }
-.faqs-card-img{
+
+.faqs-card-img {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     padding: 16px 32px;
     border-radius: 20px;
-     box-shadow: 0px 20px 40px 0px rgba(63.99999999999993, 71.99999999999993, 81.99999999999991, 0.1);
-     margin-bottom: 20px;
-     
+    box-shadow: 0px 20px 40px 0px rgba(63.99999999999993, 71.99999999999993, 81.99999999999991, 0.1);
+    margin-bottom: 20px;
 
-} 
 
-.faqs-card-img img{
-width: 20px;
-border-radius: 100%;
-cursor: pointer;
 }
 
+.faqs-card-img img {
+    width: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.hassle-section {
+    background-image: url("https://pagebolt.uicore.co/lead-capture/wp-content/uploads/sites/2/2023/03/Lead-Capture-CTA-BG.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #092537;
+    padding: 100px;
+    margin-top: 100px;
+    border-radius: 16px;
+    margin-bottom: 100px;
+}
+
+.hassle-card h2 {
+    font-size: 48px;
+    color: white;
+    margin-top: 0;
+}
+
+/* footer section */
+
+.footer-section{
+    background-color: #001726;
+    padding: 60px 0px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.footer-logo h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.footer-nav-link {
+
+    font-size: 16px;
+    margin-bottom: 40px;
+   
+}
+
+.footer-nav-link a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+
+}
+
+.footer-nav-link a:hover {
+    color: #0a5ae4;
+}
+
+.footer-email form input {
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.footer-nav-links a {
+    text-decoration: none;
+    color: #777C85;
+     margin-left: 20px;
+
+}
+.footer-nav-links a:hover{
+     color: #0a5ae4;
+}
+
+.footer-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid #777C85;
+    padding-top: 30px;
+}
 
 
 /* responsive for small device */
